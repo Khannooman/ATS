@@ -25,6 +25,4 @@ def findBestMatch(job_link):
         best_candidate = sorted(dic.items(), key = lambda x:x[1], reverse = True)[:10]
         
         return best_candidate
-
-
 print(findBestMatch(link))
