@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 from resume_parsing import parse_resume
 app = Flask(__name__)
 
+
 @app.route("/resume_parser", methods = ["GET", "POST"])
 def resume_parser():
     if request.method == "post":
